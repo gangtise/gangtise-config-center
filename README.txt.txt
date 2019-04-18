@@ -1,2 +1,0 @@
-README:
-gangtise config center 
