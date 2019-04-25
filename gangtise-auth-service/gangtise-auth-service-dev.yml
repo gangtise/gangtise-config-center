@@ -3,8 +3,9 @@ server:
   
 spring:
   redis:
-    host: 192.168.1.124
+    host: '{cipher}5c7ce3153a1333b9d2357722f11812ef25993870fc8ad6f03f0c7ed5a98d0f4b43ddba69595d8fcfc19caf98ab3b93ba184928590a560270b90c846200d33901'
     port: 6379
+    password:'{cipher}03ce35d35f5c5534f19345e39a75839045fa0db7d3855452ec2ba46b4e66fdf162ebfab26e17edc589afb1e62f8be6652db5f546c48943c11c97f1ad175021df'
 
 ignore:
   urls:
