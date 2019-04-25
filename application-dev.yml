@@ -65,5 +65,5 @@ redis:
   server:
     ip: gangtise.redis.cache.chinacloudapi.cn
     port: 6379
-    password: '{cipher}03ce35d35f5c5534f19345e39a75839045fa0db7d3855452ec2ba46b4e66fdf162ebfab26e17edc589afb1e62f8be6652db5f546c48943c11c97f1ad175021df'
+    password: tAYgnsr3MSE8onaB3M083c91ZyVOPI5tvE1Ze98e11E=
 
