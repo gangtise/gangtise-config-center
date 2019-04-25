@@ -1,5 +1,6 @@
 server:
-  port: 10020
+  port: 12001
+  
   
 spring:
     datasource:
@@ -8,9 +9,9 @@ spring:
 #            enabled: true
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.1.124:3306/gangtise_soum?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+        url: jdbc:mysql://192.168.1.124:3306/gts_userdata?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
         username: root
-        password: '{cipher}4710a597e15fcd19389c690af64dfbc40c35078d70a9be69fc5ba0432e335467'
+        password: 123456
         initial-size: 10
         max-active: 100
         min-idle: 10
@@ -36,3 +37,8 @@ spring:
             wall:
                 config:
                     multi-statement-allow: true
+    #mongo配置
+    data:
+      mongodb:
+        database: user_data
+        uri: mongodb://192.168.1.124:27017 
