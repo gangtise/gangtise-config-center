@@ -63,7 +63,7 @@ rsc:
 
 redis:
   server: 
-  ip: gangtise.redis.cache.chinacloudapi.cn
-  port: 6379
-  password: tAYgnsr3MSE8onaB3M083c91ZyVOPI5tvE1Ze98e11E=
+    ip: gangtise.redis.cache.chinacloudapi.cn
+    port: 6379
+    password: tAYgnsr3MSE8onaB3M083c91ZyVOPI5tvE1Ze98e11E=
 
