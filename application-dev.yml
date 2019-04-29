@@ -62,7 +62,7 @@ rsc:
       path: /Users/chenwenjie/logs
 
 redis:
-  database: 1
+  database: 0
   host: gangtise.redis.cache.chinacloudapi.cn
   port: 6379
   password: '{cipher}5a70ce2eaf2afcd3597fdcf6b3554086d764eff484b5b14d53396f2bd8e23e134c5353b0efe92cd1b3f3de3651664678d09f1975c537f73b74179a5b63ceb69c'
