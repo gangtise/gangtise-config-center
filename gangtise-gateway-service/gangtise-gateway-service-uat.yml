@@ -14,5 +14,6 @@ ignore:
     - /swagger-resources/**
     - /v2/api-docs
     - /favicon.ico 
+    - /userdata/**
   status:
     - /auth/oauth/token
