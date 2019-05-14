@@ -16,6 +16,7 @@ ignore:
     - /v2/api-docs
     - /favicon.ico
     - /user/tbUserInfo/insert
+    - /userdata/**
   status:
     - /auth/oauth/token
     - /userdata/basic
