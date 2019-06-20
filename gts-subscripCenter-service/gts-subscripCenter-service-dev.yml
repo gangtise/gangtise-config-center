@@ -5,6 +5,8 @@ server:
 spring:              
   kafka:
     bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
+    listener: 
+        concurrency: 8
     consumer:
       # 指定一个默认的组名
       group-id: subscripCenter
