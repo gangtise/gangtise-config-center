@@ -28,3 +28,8 @@ spring:
       buffer-memory: 524288
       # 服务器地址
       bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
+topic:
+    #分区
+    partitions: 4
+    #备份
+    replication: 1
