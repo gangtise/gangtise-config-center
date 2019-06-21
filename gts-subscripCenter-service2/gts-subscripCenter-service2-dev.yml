@@ -1,12 +1,12 @@
 server:
-  port: 11002
+  port: 11003
   
   
 spring:              
   kafka:
     bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
     listener: 
-        concurrency: 20
+        concurrency: 12
     consumer:
       # 指定一个默认的组名
       group-id: subscripCenter
@@ -30,6 +30,6 @@ spring:
       bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
 topic:
     #分区
-    partitions: 40
+    partitions: 4
     #备份
-    replication: 2
+    replication: 1
