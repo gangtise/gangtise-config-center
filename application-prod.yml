@@ -59,7 +59,7 @@ rsc:
 #    logstash:
 #      url: 58.213.91.105:9003
     flatfile:
-      path: /alidata1/logs
+      path: /export/home/log
 
 redis:
   server:
