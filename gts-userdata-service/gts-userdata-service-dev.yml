@@ -1,20 +1,19 @@
 server:
   port: 12001
-  
-  
+
 spring:              
     #mongo配置
-    data:
-      mongodb:
-        database: user_data
-        uri: mongodb://mongo-server:29019
-        
+  data:
+    mongodb:
+      database: user_data
+      uri: mongodb://mongo-server:29019
+
 task:
-    usersector:    
-        remainNum: 10
-    userquota:
-        remainNum: 10
-    userbrowser:
-        #1:按保留条数 2：按保留天数
-        flag: 1
-        remain: 100
+  usersector:    
+    remainNum: 10
+  userquota:
+    remainNum: 10
+  userbrowser:
+    #1:按保留条数 2：按保留天数
+    flag: 1
+    remain: 100
