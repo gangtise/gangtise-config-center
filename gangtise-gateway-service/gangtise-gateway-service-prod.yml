@@ -14,6 +14,15 @@ ignore:
     - /swagger-resources/**
     - /v2/api-docs
     - /favicon.ico
+    - /user/tbUserInfo/insert
     - /userdata/**
+    - /subscripcenter/**
+    - /newscenter/**
+    - /fulltextsearch/**
   status:
     - /auth/oauth/token
+    - /userdata/basic
+    - /subscripcenter/kafkaCenter/createKafkaTopic
+    - /newscenter/article/queryArticleByCondition
+    - /fulltextsearch/secu/search/keysearch
+    - /fulltextsearch/sector/search/criteriaQuery
