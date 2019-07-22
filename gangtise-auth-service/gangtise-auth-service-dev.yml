@@ -21,3 +21,6 @@ ignore:
     - /v2/api-docs 
     - /rscLogin
     - /captcha.jpg
+    - /subscripcenter/**
+    - /newscenter/**
+    - /fulltextsearch/**
