@@ -1,0 +1,32 @@
+server:
+  port: 13001
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: es1:9300, es2:9300, es3:9300
+  kafka:
+    bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
+    listener: 
+      concurrency: 8
+    consumer:
+      group-id: maxwell_news
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            
+  thymeleaf:
+    cache: false
+    suffix: .html
+    prefix: classpath:/templates/
+    encoding: UTF-8
+
+gangtise:
+  log:
+    flatfile:
+      path: /export/home/log
+      
+pagenumdefault: 0
+pagesizedefault: 20
