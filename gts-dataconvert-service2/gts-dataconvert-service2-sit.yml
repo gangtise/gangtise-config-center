@@ -8,7 +8,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://d.pamirs.com:57900/jydb?useSSL=true&requireSSL=false&characterEncoding=UTF-8
     username: root
-    password: '{cipher}c584166a3e8da51b353c9757536bc171630f737e0ec332f9d10c5bc1c6f46691589d57c9138c75cc84fc2dae0eba0569'
+    password: qd9wePtRQQBhZMPwkAmMqoZA
     initial-size: 10
     max-active: 100
     min-idle: 10
