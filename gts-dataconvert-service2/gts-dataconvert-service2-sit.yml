@@ -6,9 +6,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://gangtisedb.mysql.database.chinacloudapi.cn:3306/cdm_gangtise_db?useSSL=true&requireSSL=false&characterEncoding=UTF-8
-    username: gangtise@gangtisedb
-    password: '{cipher}1ac92601034f92e3e93df261e025da57e2ddd015d54d219afcd5144752f9c014'
+    url: jdbc:mysql://d.pamirs.com:57900/jydb?useSSL=true&requireSSL=false&characterEncoding=UTF-8
+    username: root
+    password: '{cipher}c584166a3e8da51b353c9757536bc171630f737e0ec332f9d10c5bc1c6f46691589d57c9138c75cc84fc2dae0eba0569'
     initial-size: 10
     max-active: 100
     min-idle: 10
