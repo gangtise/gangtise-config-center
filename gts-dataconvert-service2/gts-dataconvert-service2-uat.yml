@@ -1,14 +1,14 @@
 server:
-  port: 10032
+  port: 10033
   
   
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://gangtisedb.mysql.database.chinacloudapi.cn:3306/cdm_gangtise_db?useSSL=true&requireSSL=false&characterEncoding=UTF-8
-    username: gangtise@gangtisedb
-    password: '{cipher}1ac92601034f92e3e93df261e025da57e2ddd015d54d219afcd5144752f9c014'
+    url: jdbc:mysql://d.pamirs.com:57900/jydb?characterEncoding=UTF-8
+    username: root
+    password: qd9wePtRQQBhZMPwkAmMqoZA
     initial-size: 10
     max-active: 100
     min-idle: 10
@@ -37,8 +37,8 @@ spring:
 
   kafka:
     bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
-    listener: 
-        concurrency: 4
+#    listener: 
+#        concurrency: 4
     consumer:
       # 指定一个默认的组名
       group-id: cdmconvert
