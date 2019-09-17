@@ -6,7 +6,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://d.pamirs.com:57900/syncdb?characterEncoding=UTF-8
+    url: jdbc:mysql://d.pamirs.com:57900/cdm_gangtise_db?characterEncoding=UTF-8
     username: root
     password: qd9wePtRQQBhZMPwkAmMqoZA
     initial-size: 10
