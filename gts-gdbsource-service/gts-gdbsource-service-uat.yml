@@ -1,0 +1,22 @@
+server:
+  port: 10036
+  
+spring: 
+  kafka: 
+    bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
+    consumer:
+      group-id: consumer01
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer  
+
+
+gdb:
+  rely:
+#    filepath: C:/Windows/System32/libDBSApi4Java.dll
+    filepath: /etc/libGDBApi4Java.so
+custom:
+  ruleFile: classpath:xml/rule.xml
+  relevanceFile: classpath:xml/database_mapping.xml
