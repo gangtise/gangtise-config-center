@@ -1,0 +1,64 @@
+server:
+  port: 13005
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: es1:9300, es2:9300, es3:9300
+  kafka:
+    bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
+    listener: 
+      concurrency: 8
+    consumer:
+      group-id: maxwell_keyboard_data
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            
+  thymeleaf:
+    cache: false
+    suffix: .html
+    prefix: classpath:/templates/
+    encoding: UTF-8
+    
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mysql-server:3306/cdm_gangtise_db?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: gangtise@gangtisedb
+    password: '{cipher}1ac92601034f92e3e93df261e025da57e2ddd015d54d219afcd5144752f9c014'
+    initial-size: 10
+    max-active: 100
+    min-idle: 10
+    max-wait: 60000
+    pool-prepared-statements: true
+    max-pool-prepared-statement-per-connection-size: 20
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    validation-query: SELECT 1 FROM DUAL
+    test-while-idle: true
+    test-on-borrow: false
+    test-on-return: false
+    stat-view-servlet:
+      enabled: true
+      url-pattern: /druid/*
+      #login-username: admin
+      #login-password: admin
+    filter:
+      stat:
+        log-slow-sql: true
+        slow-sql-millis: 1000
+        merge-sql: true
+      wall:
+        config:
+          multi-statement-allow: true
+
+gangtise:
+  log:
+    flatfile:
+      path: /export/home/log
+      
+pagenumdefault: 0
+pagesizedefault: 20
