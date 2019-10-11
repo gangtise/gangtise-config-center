@@ -24,4 +24,5 @@ ignore:
     - /subscripcenter/**
     - /newscenter/**
     - /fulltextsearch/**
+    - /keyboardsearch/**
 
