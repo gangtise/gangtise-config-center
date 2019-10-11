@@ -8,7 +8,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://d.pamirs.com:57900/cdm_gangtise_db?characterEncoding=UTF-8
     username: root
-    password: qd9wePtRQQBhZMPwkAmMqoZA
+    password: '{cipher}27abad44e16d38df66bea142e6e0769b3310649ae5246976ff599c78ac64b2065cba3509306d8f1753ded2ca42087c56'
     initial-size: 10
     max-active: 100
     min-idle: 10
