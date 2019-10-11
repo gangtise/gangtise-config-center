@@ -25,4 +25,5 @@ ignore:
     - /newscenter/**
     - /fulltextsearch/**
     - /keyboardsearch/**
+    - /keyboarddata/**
 
