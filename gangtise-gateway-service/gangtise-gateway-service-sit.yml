@@ -19,6 +19,7 @@ ignore:
     - /subscripcenter/**
     - /newscenter/**
     - /fulltextsearch/**
+    - /keyboardsearch/**
   status:
     - /auth/oauth/token
     - /userdata/basic
