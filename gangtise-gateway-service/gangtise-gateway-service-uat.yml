@@ -19,6 +19,7 @@ ignore:
     - /subscripcenter/**
     - /newscenter/**
     - /fulltextsearch/**
+    - /keyboardsearch/**
   status:
     - /auth/oauth/token
     - /userdata/basic
@@ -26,3 +27,4 @@ ignore:
     - /newscenter/article/queryArticleByCondition
     - /fulltextsearch/secu/search/keysearch
     - /fulltextsearch/sector/search/criteriaQuery
+    - /keyboardsearch/article/get
