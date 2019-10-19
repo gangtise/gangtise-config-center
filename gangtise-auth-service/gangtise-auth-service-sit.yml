@@ -26,3 +26,5 @@ ignore:
     - /fulltextsearch/**
     - /keyboardsearch/**
     - /keyboarddata/**
+    - /keyboardsearch/**
+    - /info/**
