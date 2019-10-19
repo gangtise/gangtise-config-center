@@ -20,6 +20,8 @@ ignore:
     - /newscenter/**
     - /fulltextsearch/**
     - /keyboardsearch/**
+    - /keyboardsearch/**
+    - /info/**
   status:
     - /auth/oauth/token
     - /userdata/basic
@@ -28,3 +30,4 @@ ignore:
     - /fulltextsearch/secu/search/keysearch
     - /fulltextsearch/sector/search/criteriaQuery
     - /keyboardsearch/article/get
+    - /info/emailSendApi/hutoolsendEmail
