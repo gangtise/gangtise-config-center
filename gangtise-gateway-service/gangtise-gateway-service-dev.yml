@@ -22,6 +22,7 @@ ignore:
     - /fulltextsearch/**
     - /keyboardsearch/**
     - /info/**
+    - /dataconvert/**
   status:
     - /auth/oauth/token
     - /userdata/basic
