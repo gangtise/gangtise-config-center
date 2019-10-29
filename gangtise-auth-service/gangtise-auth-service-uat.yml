@@ -28,3 +28,4 @@ ignore:
     - /keyboarddata/**
     - /keyboardsearch/**
     - /info/**
+    - /dataconvert/**
