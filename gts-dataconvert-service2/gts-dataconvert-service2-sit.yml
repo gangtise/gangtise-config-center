@@ -6,9 +6,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://d.pamirs.com:57900/cdm_gangtise_db?characterEncoding=UTF-8
-    username: root
-    password: '{cipher}27abad44e16d38df66bea142e6e0769b3310649ae5246976ff599c78ac64b2065cba3509306d8f1753ded2ca42087c56'
+    url: jdbc:mysql://gangtisedb.mysql.database.chinacloudapi.cn:3306/cdm_gangtise_db?useSSL=true&requireSSL=false&characterEncoding=UTF-8
+    username: gangtise@gangtisedb
+    password: '{cipher}1ac92601034f92e3e93df261e025da57e2ddd015d54d219afcd5144752f9c014'
     initial-size: 10
     max-active: 100
     min-idle: 10
@@ -50,6 +50,7 @@ spring:
       # key/value的反序列化
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      jydbtopic: cdm_192.168.1.68_jydb
     producer:
       # key/value的序列化
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
