@@ -27,3 +27,4 @@ ignore:
     - /fulltextsearch/**
     - /keyboardsearch/**
     - /info/**
+    - /dataconvert/**
