@@ -50,7 +50,7 @@ spring:
       # key/value的反序列化
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      jydbtopic: cdm_192.168.1.68_jydb
+      jydbtopic: cdm_139.217.219.124_jydb
     producer:
       # key/value的序列化
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
