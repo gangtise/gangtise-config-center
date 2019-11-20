@@ -55,7 +55,7 @@ spring:
         config:
           multi-statement-allow: true
 article:
-  linkpath: http://192.168.1.164:13004/article/get/
+  linkpath: http://http://52.130.64.48:13004/article/get/
 
 gangtise:
   log:
