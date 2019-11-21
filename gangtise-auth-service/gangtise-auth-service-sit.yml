@@ -29,3 +29,4 @@ ignore:
     - /keyboardsearch/**
     - /info/**
     - /dataconvert/**
+    - /quarkresponse/**
