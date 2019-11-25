@@ -15,8 +15,8 @@ spring:
 
 gdb:
   rely:
-#    filepath: C:/Windows/System32/libDBSApi4Java.dll
-    filepath: /etc/libDBSApi4Java.so
+    filepath: C:/Windows/System32/libDBSApi4Java.dll
+#    filepath: /etc/libDBSApi4Java.so
 custom:
   ruleFile: classpath:xml/rule.xml
   relevanceFile: classpath:xml/database_mapping.xml
