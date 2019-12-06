@@ -25,6 +25,7 @@ ignore:
     - /info/**
     - /dataconvert/**
     - /quarkresponse/**
+    - /userdata/**
   status:
     - /auth/oauth/token
     - /userdata/basic
