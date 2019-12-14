@@ -5,8 +5,8 @@ spring:
     #mongo配置
   data:
     mongodb:
-      database: user_data
-      uri: mongodb://mongo-server:29019
+      #database: user_data
+      uri: mongodb://gangtise:abcd1234@40.73.110.216:27017/user_data
 
 task:
   usersector:    
