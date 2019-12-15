@@ -16,6 +16,8 @@ ignore:
     - /favicon.ico
     - /user/tbUserInfo/insert
     - /user/tbUserInfo/userInsert
+    - /user/tbUserInfo/selectUserAccount
+    - /user/tbUserInfo/hasUserAccount
     - /userdata/**
     - /subscripcenter/**
     - /newscenter/**
