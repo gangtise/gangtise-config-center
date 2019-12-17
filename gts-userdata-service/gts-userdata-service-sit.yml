@@ -8,7 +8,7 @@ spring:
       #database: user_data
       uri: mongodb://gangtise:abcd1234@40.73.110.216:27017/user_data
     kafka:
-        bootstrap-servers: es1:9092,es2:9092,es3:9092
+        bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
         listener: 
           concurrency: 4
         consumer:
@@ -31,7 +31,7 @@ spring:
             # 缓存容量
             buffer-memory: 524288
             # 服务器地址
-            bootstrap-servers: es1:9092,es2:9092,es3:9092
+            bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
 
 
 task:
