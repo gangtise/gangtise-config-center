@@ -5,7 +5,7 @@ spring:
   kafka: 
     bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
     consumer:
-      group-id: consumer
+      group-id: consumer1
       auto-offset-reset: earliest
       enable-auto-commit: true
       auto-commit-interval: 100
