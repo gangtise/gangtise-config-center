@@ -18,6 +18,7 @@ ignore:
     - /user/tbUserInfo/userInsert    
     - /user/tbUserInfo/selectUserAccount
     - /user/tbUserInfo/hasUserAccount
+    - /user/tbUserInfo/userInsertByPassword
     - /subscripcenter/**
     - /newscenter/**
     - /fulltextsearch/**
