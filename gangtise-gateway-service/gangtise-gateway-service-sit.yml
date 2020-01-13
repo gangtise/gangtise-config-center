@@ -15,19 +15,21 @@ ignore:
     - /v2/api-docs
     - /favicon.ico
     - /user/tbUserInfo/insert
-    - /user/tbUserInfo/userInsert    
-    - /user/tbUserInfo/selectUserAccount
+    - /user/tbUserInfo/userInsert
     - /user/tbUserInfo/hasUserAccount
+    - /user/tbUserInfo/visitorInsert
     - /user/tbUserInfo/userInsertByPassword
-    - /subscripcenter/**
+    - /user/tbUserInfo/resetPasswordByUserAccount
+    - /user/tbUserInfo/visitorToUser
+    - /user/tbUserInfo/load/batch
+    - /userdata/**
     - /newscenter/**
     - /fulltextsearch/**
-    - /keyboarddata/**
     - /keyboardsearch/**
     - /info/**
     - /dataconvert/**
     - /quarkresponse/**
-    - /userdata/**
+
   status:
     - /auth/oauth/token
     - /userdata/basic
@@ -37,3 +39,4 @@ ignore:
     - /fulltextsearch/sector/search/criteriaQuery
     - /keyboardsearch/article/get
     - /info/emailSendApi/hutoolsendEmail
+
