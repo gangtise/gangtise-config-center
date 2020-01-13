@@ -2,6 +2,9 @@ server:
   port: 10030
 Gangtise:
   userServiceIp: 10.0.2.7:1925
+  HDFS_Ip_Port: 10.0.3.13:9000
+  HDFS_Ip_Port_Client: 10.0.3.13:14000
+
 spring:
     datasource:
 #        druid:
