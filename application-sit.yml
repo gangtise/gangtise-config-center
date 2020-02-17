@@ -20,12 +20,12 @@ feign:
   okhttp:
     enabled: true
   httpclient:
-    enabled: false  
-      
-ribbon:  
-  ReadTimeout: 20000  
-  ConnectTimeout: 20000 
-        
+    enabled: false
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
 hystrix:
   threadpool:
     default:
@@ -38,7 +38,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
-    
+
 management:
   endpoints:
     web:
@@ -66,6 +66,7 @@ redis:
     #ip: gangtise.redis.cache.chinacloudapi.cn
     #port: 6379
     #password: tAYgnsr3MSE8onaB3M083c91ZyVOPI5tvE1Ze98e11E=
-    ip: 10.10.1.5
-    port: 6379
+    #ip: 10.10.1.5
+    #port: 6379
     password: BE1fuDPT1Csfn3imPXXN+8zc31TPnmvpPZ+wHrr63rk=
+    nodes: 10.10.1.5:13000,10.10.1.5:13001,10.10.1.5:13002,10.10.1.5:13003,10.10.1.5:13004,10.10.1.5:13005
