@@ -30,6 +30,8 @@ ignore:
     - /dataconvert/**
     - /quarkresponse/**
     - /user/Mail/sendMail
+    - /user/tbUserInfo/forgetPasswordApi
+    - /user/tbUserInfo/forgetPassword
 
   status:
     - /auth/oauth/token
