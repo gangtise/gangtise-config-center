@@ -3,9 +3,26 @@ server:
 Gangtise:
   userServiceIp: 10.0.2.7:1925
   hdfsIpPort: 10.0.3.13:8020
-  hdfsIpPortClient: 52.130.82.91:14000
+  eaServiceIp: 192.168.1.166:8484
 
 spring:
+  kafka:
+    bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
+    consumer:
+      # earliest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，从头开始消费
+      # latest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，消费新产生的该分区下的数据
+      # none:topic各分区都存在已提交的offset时，从offset后开始消费；只要有一个分区不存在已提交的offset，则抛出异常
+      auto-offset-reset: earliest
+      #enable-auto-commit: false
+      # key/value的反序列化
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      # key/value的序列化
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # 服务器地址
+      bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
   http:
     multipart:
       location: /data/upload_tmp
