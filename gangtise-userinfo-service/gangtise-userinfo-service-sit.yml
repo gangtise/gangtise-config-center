@@ -1,9 +1,5 @@
 server:
   port: 10030
-Gangtise:
-  userServiceIp: 10.0.2.7:1925
-  hdfsIpPort: 10.0.3.13:8020
-  hdfsIpPortClient: 52.130.82.91:14000
 
 spring:
   http:
