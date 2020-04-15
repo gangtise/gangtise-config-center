@@ -3,7 +3,7 @@ server:
 Gangtise:
     AzureBlob:
         AccountName: gangtisestorage
-        AccountKey: '{cipher}1e09f4f1d0deda8d8f3a79b8434160ec567e9ca1bccee4b668105fe7dcf9aca2fa277083dd596b91a0567a9c8537f741'
+        AccountKey: '{cipher}89fb34065035ff84a94b327ef01e41973deefae77e4371e95228d1788fe972ec8f99f9368230c06b18232d26999bcb692d36f0de55ab3cda960aeddbe4d17f1cff660cc5024127290177e28431b6239a2e0030a0412168c8ded00ac23cc52bca240546d58722ed5aa41b9b21607f4cdf'
         image: images
 
 
