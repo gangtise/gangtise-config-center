@@ -2,8 +2,11 @@ server:
   port: 10030
 Gangtise:
   userServiceIp: 10.0.2.7:1925
-  hdfsIpPort: 10.0.3.13:8020
-  eaServiceIp: 192.168.1.166:8484
+  AzureBlob:
+    AccountName: gangtisestorage
+    AccountKey: '{cipher}07a67747f65af241bc37b84d19299cc7b5cf435c1101c9d60c688164160ff570073aa81e6919d0ef0600d4232b07efeb00d0e2d1edf23db998303e2b61c3536290e00ee2687e934d7014cec1577900710a4d925d6d8e122688bbdd227617979beb8adf43ef47cb6c69a14977945d731f'
+    image: images
+
 
 spring:
   kafka:
