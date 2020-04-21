@@ -29,6 +29,11 @@ ignore:
     - /info/**
     - /dataconvert/**
     - /quarkresponse/**
+    - /user/Mail/sendMail
+    - /user/Mail/sendMailByUserAccount
+    - /user/Mail/sendMailByUserAccountApi
+    - /user/tbUserInfo/forgetPasswordApi
+    - /user/tbUserInfo/forgetPassword
 
   status:
     - /auth/oauth/token

@@ -1,0 +1,110 @@
+server:
+  port: 10030
+Gangtise:
+  userServiceIp: 10.0.2.7:1925
+  AzureBlob:
+    AccountName: gangtisestorage
+    AccountKey: '{cipher}07a67747f65af241bc37b84d19299cc7b5cf435c1101c9d60c688164160ff570073aa81e6919d0ef0600d4232b07efeb00d0e2d1edf23db998303e2b61c3536290e00ee2687e934d7014cec1577900710a4d925d6d8e122688bbdd227617979beb8adf43ef47cb6c69a14977945d731f'
+    image: images
+
+
+spring:
+  kafka:
+    bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
+    consumer:
+      # earliest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，从头开始消费
+      # latest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，消费新产生的该分区下的数据
+      # none:topic各分区都存在已提交的offset时，从offset后开始消费；只要有一个分区不存在已提交的offset，则抛出异常
+      auto-offset-reset: earliest
+      #enable-auto-commit: false
+      # key/value的反序列化
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      # key/value的序列化
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # 服务器地址
+      bootstrap-servers: bigdatalog1:9092,bigdatalog2:9092,bigdatalog3:9092
+  http:
+    multipart:
+      location: /data/upload_tmp
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://gangtisedb.mysql.database.chinacloudapi.cn:3306/gangtise_user2?useSSL=true&requireSSL=false&characterEncoding=UTF-8
+    username: gangtise@gangtisedb
+    password: '{cipher}1ac92601034f92e3e93df261e025da57e2ddd015d54d219afcd5144752f9c014'
+    initial-size: 10
+    max-active: 100
+    min-idle: 10
+    max-wait: 60000
+    pool-prepared-statements: true
+    max-pool-prepared-statement-per-connection-size: 20
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    validation-query: SELECT 1 FROM DUAL
+    test-while-idle: true
+    test-on-borrow: false
+    test-on-return: false
+    stat-view-servlet:
+      enabled: true
+      url-pattern: /druid/*
+    filter:
+      stat:
+        log-slow-sql: true
+        slow-sql-millis: 1000
+        merge-sql: true
+      wall:
+        config:
+          multi-statement-allow: true
+redis:
+  server:
+    #ip: gangtise.redis.cache.chinacloudapi.cn
+    #port: 6379
+    #password: tAYgnsr3MSE8onaB3M083c91ZyVOPI5tvE1Ze98e11E=
+    ip: 10.10.1.5
+    port: 6379
+    password: BE1fuDPT1Csfn3imPXXN+8zc31TPnmvpPZ+wHrr63rk=
+    nodes: 10.10.1.5:13000,10.10.1.5:13001,10.10.1.5:13002,10.10.1.5:13003,10.10.1.5:13004,10.10.1.5:13005
+
+
+feign:
+  hystrix:
+    enabled: false
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+hystrix:
+  threadpool:
+    default:
+      coreSize: 500
+      maxQueueSize: 1000
+      queueSizeRejectionThreshold: 800
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml,/mapper/*/*Mapper.xml
+  typeAliasesPackage: com.gangtise.**.model
+  typeEnumsPackage: com.gangtise.**.vo.enums
+
+#logback获取不到config上的配置
+gangtise:
+  log:
+    logstash:
+      url: 58.213.91.105:9003
+    flatfile:
+      path: /export/home/log
