@@ -36,7 +36,7 @@ spring:
                 multi-statement-allow: true
 
   kafka:
-    bootstrap-servers: CDH1:9092,CDH2:9092,CDH3:9092,CDH4:9092
+    bootstrap-servers: 10.0.3.4:9092,10.0.3.5:9092,10.0.3.9:9092,10.0.3.10:9092
     listener: 
         concurrency: 4
     consumer:
@@ -60,4 +60,4 @@ spring:
       # 缓存容量
       buffer-memory: 524288
       # 服务器地址
-      bootstrap-servers: CDH1:9092,CDH2:9092,CDH3:9092,CDH4:9092
+      bootstrap-servers: 10.0.3.4:9092,10.0.3.5:9092,10.0.3.9:9092,10.0.3.10:9092
