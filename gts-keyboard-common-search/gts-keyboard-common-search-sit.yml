@@ -3,7 +3,7 @@ server:
 spring:
   data:
     elasticsearch:
-      cluster-name: es-gangtise-system
+      cluster-name: elasticsearch
       cluster-nodes: es1:9300, es2:9300, es3:9300
   
   thymeleaf:
