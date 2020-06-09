@@ -1,0 +1,29 @@
+server:
+  port: 10054
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    password: '{cipher}1ac92601034f92e3e93df261e025da57e2ddd015d54d219afcd5144752f9c014'
+    # 云上环境
+    username: gangtise@gangtisedb
+    url: jdbc:mysql://40.73.82.1:3306/gangtise_pakistan2?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    initial-size: 10
+    max-active: 100
+    min-idle: 10
+    max-wait: 60000
+    pool-prepared-statements: true
+    max-pool-prepared-statement-per-connection-size: 20
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    validation-query: SELECT 1 FROM DUAL
+    test-while-idle: true
+    test-on-borrow: false
+    test-on-return: false
+    stat-view-servlet:
+      enabled: true
+      url-pattern: /druid/*
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 10.0.2.10:9300,10.0.2.11:9300,10.0.2.12:9300
